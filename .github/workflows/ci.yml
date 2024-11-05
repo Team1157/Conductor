@@ -25,7 +25,7 @@ jobs:
           cargo install cargo-bundle
     - name: Build Frontend
       run: |
-        make setup && make frontend
+        export NODE_OPTIONS=--openssl-legacy-provider && make setup && make frontend
     - name: Build DEB
       run: |
           cargo bundle --format deb --release
