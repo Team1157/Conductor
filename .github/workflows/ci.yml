@@ -29,8 +29,6 @@ jobs:
     - name: Build DEB
       run: |
           cargo bundle --format deb --release
-    - name: Build RPM
-      uses: ./rpm-docker-action
     - name: rust-clippy-check
       uses: actions-rs/clippy-check@v1
       with:
