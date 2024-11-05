@@ -37,7 +37,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         name: Ubuntu
     - name: Archive Raw Application
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Conductor_ubuntu-latest
         path: target/release/conductor
